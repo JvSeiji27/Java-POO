@@ -16,8 +16,13 @@ public class Program {
         list.add(p1);
         list.add(p2);
         list.add(p3);
-        list.sort((Comparator<? super Product>) new MyComparator());//Usar este tipo
         
+        Comparator <Product> comp = new Comparator<Product>(){
+            public int compare(Product p1, Product p2){
+                return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+            }//Declaro um comparador do tipo que quero e dps implemento o compare;
+        };
+        list.sort(comp);
         for(Product p : list){
             System.out.println(p);
         }
