@@ -1,2 +1,4 @@
-application\Program.class
 entities\Product.class
+util\ProductPredicate.class
+application\Program.class
+application\Programm.class
