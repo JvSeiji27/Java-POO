@@ -16,7 +16,7 @@ public class Program {
         list.add(p1);
         list.add(p2);
         list.add(p3);
-        list.sort((Comparator<? super Product>) new MyComparator());
+        list.sort((Comparator<? super Product>) new MyComparator());//Usar este tipo
         
         for(Product p : list){
             System.out.println(p);
