@@ -16,7 +16,7 @@ public class Programm {
         list.add(p1);
         list.add(p2);
         list.add(p3);
-        list.removeIf(new ProductPredicate());
+        list.removeIf(Product :: test);
         for (Product p : list){
             System.out.println(p);
         }

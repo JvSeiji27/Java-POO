@@ -24,7 +24,9 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
-
+    public static boolean test(Product p){
+        return p.price >= 100.0;
+    }
     @Override
     public String toString() {
         return "Product{" + "name=" + name + ", price=" + price + '}';
