@@ -17,11 +17,12 @@ public class Program {
         list.add(p2);
         list.add(p3);
         
-        Comparator <Product> comp = new Comparator<Product>(){
-            public int compare(Product p1, Product p2){
-                return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
-            }//Declaro um comparador do tipo que quero e dps implemento o compare;
-        };
+        //Comparator<Product> comp = (pa,pb) -> pa.getName().toUpperCase().compareTo(pb.getName().toUpperCase());
+        //Precisamos usar nomes diferentes para o parâmetro
+          Comparator <Product> comp = (pa,pb)->{
+              return pa.getName().toUpperCase().compareTo(pb.getName().toUpperCase());
+          };
+        
         list.sort(comp);
         for(Product p : list){
             System.out.println(p);
