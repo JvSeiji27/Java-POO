@@ -1,4 +1,6 @@
+application\PriceUpdate.class
 entities\Product.class
+application\UsingConsumer.class
 util\ProductPredicate.class
 application\Program.class
 application\Programm.class
