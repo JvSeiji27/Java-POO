@@ -18,9 +18,12 @@ public class UsingConsumer {
         list.add(p3);
         list.add(p4);
         
+        //Static
+        //list.forEach(Product::StaticAccept);
         
-        list.forEach(new PriceUpdate());
+        list.forEach(Product::NonStaticAccept);
         list.forEach(System.out::println);
+        //
         /*for(Product p : list){
             System.out.println(p);
         }*/

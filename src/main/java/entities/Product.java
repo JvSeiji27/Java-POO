@@ -31,6 +31,14 @@ public class Product {
     public boolean nonStatic(){
         return price >= 100.0;
     }
+    
+    public static void StaticAccept(Product p){
+        p.setPrice(p.getPrice()*1.1);
+    }
+    public  void NonStaticAccept(){
+        price *=1.1; 
+    }
+    
     @Override
     public String toString() {
         return "Product{" + "name=" + name + ", price=" + String.format("%.2f", price) + '}';
