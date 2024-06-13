@@ -3,6 +3,7 @@ package application;
 import entities.Product;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class UsingConsumer {
     public static void main(String[] args){
@@ -18,10 +19,17 @@ public class UsingConsumer {
         list.add(p3);
         list.add(p4);
         
-        //Static
-        //list.forEach(Product::StaticAccept);
         
-        list.forEach(Product::NonStaticAccept);
+      /*Consumer <Product> con = new Consumer<Product>(){
+        public void accept(Product p){
+            p.setPrice(p.getPrice()*1.1);
+        }
+    };*/
+        //Consumer <Product> con = p -> p.setPrice(p.getPrice()*1.1);
+        //Or
+        list.forEach(p -> p.setPrice(p.getPrice()*1.1));
+        
+        //list.forEach(con);
         list.forEach(System.out::println);
         //
         /*for(Product p : list){
