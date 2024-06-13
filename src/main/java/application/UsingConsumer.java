@@ -26,8 +26,10 @@ public class UsingConsumer {
         }
     };*/
         //Consumer <Product> con = p -> p.setPrice(p.getPrice()*1.1);
+        // seria como se fosse, fazer em um objeto p tal operação;
         //Or
-        list.forEach(p -> p.setPrice(p.getPrice()*1.1));
+        double factor = 1.1;
+        list.forEach(p -> p.setPrice(p.getPrice()*factor));
         
         //list.forEach(con);
         list.forEach(System.out::println);

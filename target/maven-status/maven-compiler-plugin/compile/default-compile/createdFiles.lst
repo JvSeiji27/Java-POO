@@ -1,6 +1,8 @@
-application\PriceUpdate.class
-entities\Product.class
-application\UsingConsumer.class
+util\PriceUpdate.class
 util\ProductPredicate.class
 application\Program.class
+application\UsingFunction.class
+entities\Product.class
+application\UsingConsumer.class
 application\Programm.class
+util\UpperCaseName.class

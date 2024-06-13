@@ -1,4 +1,4 @@
-package application;
+package util;
 
 import entities.Product;
 import java.util.function.Consumer;
