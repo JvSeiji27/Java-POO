@@ -1,8 +1,16 @@
 util\PriceUpdate.class
+application\ExFixStream$1.class
+application\UsingFunction.class
+model\services\ProductService.class
+application\ExerStream.class
+application\ExFixStream.class
 util\ProductPredicate.class
 application\Program.class
-application\UsingFunction.class
+application\UsingStream.class
+application\Pipelines.class
 entities\Product.class
 application\UsingConsumer.class
+application\FuncaoSobreFuncao.class
 application\Programm.class
+entities\Employee.class
 util\UpperCaseName.class
